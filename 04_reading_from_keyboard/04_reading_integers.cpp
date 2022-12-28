@@ -60,7 +60,7 @@ bool onNumber_check1(string s) {																//	too complicated
 }
 
 bool onNumber_check2(string s) {																//	using regular expression
-	regex checker("^-?[0-9]*$");
+	regex checker("^-?[0-9]+$");
 	
 	return regex_search(s, checker);
 }
