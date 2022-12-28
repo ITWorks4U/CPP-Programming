@@ -1,2 +1,0 @@
- This text is now in given (text) file.
- Unlinke in C programming it's a better handling to read/write files with C++.
