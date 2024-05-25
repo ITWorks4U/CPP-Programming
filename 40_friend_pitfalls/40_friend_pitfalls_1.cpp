@@ -59,15 +59,6 @@ class ForeignClass {
 			bc.unable_to_display();
 		}
 
-		/*
-			Fun fact: Since access comes with BaseClass as argument with and without const
-			only access #2 is going to call and in that case (Linux Mint 21 64 bit) no warning
-			or error appeared on compile time.
-
-			Usually, void access(BaseClass &bc) and void access(const BaseClass &bc)
-			might be identical and shall raise an error on compile time.
-		*/
-
 		void access(const BaseClass &bc) {
 			/*
 				with the argument you're also able to do the same thing;
