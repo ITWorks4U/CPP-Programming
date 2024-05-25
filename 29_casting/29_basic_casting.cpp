@@ -12,7 +12,7 @@ using namespace std;
 struct Example {
 	int i_member;
 	char word1[20];																							//	C-string with 20 bytes
-	char *word2;																							//	C-string with 8 bytes!
+	char *word2;																							//	C-string with n bytes!
 };
 
 int main() {
@@ -28,7 +28,10 @@ int main() {
 		void *malloc(size_t __size) returns a pointer to an allocated structure with n bytes
 		depending on the size of the structure => in that case 32 bytes
 
-		attention: A pointer has ALWAYS a size of 8 bytes!
+		attention: A pointer has a different size of n bytes, depending on the machine you're working on.
+		64 bit: 8 bytes
+		32 bit: 4 bytes
+		16 bit: 2 bytes
 
 		If you want more to learn about pointers, then take a look there:
 		https://github.com/ITWorks4U/C-Programming/tree/main/29_pointers
